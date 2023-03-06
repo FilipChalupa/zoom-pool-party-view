@@ -1,0 +1,36 @@
+.wrapper {
+	position: absolute;
+	inset: auto 0 0;
+	font-family: sans-serif;
+	display: flex;
+}
+
+.wrapper::before {
+	content: '';
+	flex-grow: var(--x);
+}
+
+.wrapper::after {
+	content: '';
+	flex-grow: calc(1 - var(--x));
+}
+
+.in {
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	grid-column: 2;
+	flex-shrink: 0;
+}
+
+.name {
+	text-shadow: 0 0 0.5em #000000;
+}
+
+.emoji {
+	font-size: 2em;
+}
+
+.is_flipped .emoji {
+	transform: scaleX(-1);
+}

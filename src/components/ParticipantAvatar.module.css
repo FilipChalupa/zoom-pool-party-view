@@ -25,10 +25,11 @@
 
 .name {
 	text-shadow: 0 0 0.5em #000000;
+	font-size: 0.7em;
 }
 
 .emoji {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .is_flipped .emoji {

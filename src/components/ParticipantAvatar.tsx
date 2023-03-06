@@ -48,7 +48,7 @@ export const ParticipantAvatar: FunctionComponent<ParticipantAvatarProps> = ({
 	const [direction, setDirection] = useState<1 | -1>(() =>
 		Math.random() > 0.5 ? 1 : -1,
 	)
-	const [speed, setSpeed] = useState(() => Math.random() * 0.0001 + 0.0001)
+	const [speed, setSpeed] = useState(() => Math.random() * 0.00002 + 0.00002)
 
 	useEffect(() => {
 		const x = Math.random()
